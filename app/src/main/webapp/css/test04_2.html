@@ -12,7 +12,7 @@
           스타일을 선언한 순서 보다 계산 값이 우선한다.
        => specificity 계산법
        *              : 0
-       태그           : 1
+       태그, 상태     : 1
        클래스, 조건   : 10
        아이디         : 100
        인라인스타일   : 1000
@@ -30,7 +30,6 @@
     background-color: blue;
   }
 
-
 /* = 1 */
   div { 
     width: 100px;
@@ -38,20 +37,16 @@
     margin: 10px;
   }
 
-
 /* = 1 */
   div { 
-    width: 200px; /* 같은 점수일 때 나중에 지정된 스타일이 기존 스타일을 덮어쓴다 */
+    width: 200px;
     background-color: green;
   }
-
-
 
 /* = 1 */
   div { 
     background-color: navy;
   }
-
 
 /* = 10 */
   .c1 { 
@@ -63,12 +58,10 @@
     background-color: red;
   }
 
-
 /* = 1 + 100 = 101 */
   div#d3 {  
     background-color: ivory;
   }
-
 
 
   </style>
