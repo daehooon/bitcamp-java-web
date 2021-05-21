@@ -18,7 +18,7 @@
   }
   
   #logo {
-    background-image: url('https://www.bitcamp.co.kr/theme/basic/img/logo.png');
+    background-image: url('http://bitcamp.co.kr/theme/basic/img/logo.png');
     background-repeat: no-repeat;
     padding-top: 40px;
     /* 콘텐츠의 높이를 말한다.*/
@@ -27,6 +27,7 @@
   }
 
   </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
 <!-- 텍스트를 이용하여 제목 출력
@@ -39,7 +40,7 @@
 => 그림으로 페이지의 제목을 출력하기 때문에 아름답다.
 => 검색 엔진에서 이 페이지의 주제가 뭔지 알아내기 어렵다.
 -->
-<h1><img src="https://www.bitcamp.co.kr/theme/basic/img/logo.png"></h1>
+<h1><img src="http://bitcamp.co.kr/theme/basic/img/logo.png"></h1>
 
 <!-- 검색 엔진이 이해할 수 있도록(검색 엔진 친화적인) 
    의미있는 태그를 사용하여 콘텐츠를 작성한다.
@@ -47,7 +48,14 @@
 -->
 <h1 id="logo">비트캠프</h1>
 
-
+<a href="delete" class="btn btn-primary btn-sm">한국드라마</a><br>
+<input type="submit" value="한국드라마" class="btn btn-primary btn-sm"><br>
+<button class="btn btn-primary btn-sm">한국드라마</button>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+alert("okokoko")
+swal("Hello world!");
+</script>
 </body>
 </html>
 
