@@ -30,8 +30,10 @@ var e = document.querySelector("article:first-child");
 // => 부모 태그를 찾는다.
 var parent = document.querySelector("section");
 
-// => 부모 태그에서 자식 태그를 제거한다.
-parent.removeChild(e);
+window.setTimeout(function() {
+	// => 부모 태그에서 자식 태그를 제거한다.
+	parent.removeChild(e);
+}, 10000);
 
 </script>
 </body>
