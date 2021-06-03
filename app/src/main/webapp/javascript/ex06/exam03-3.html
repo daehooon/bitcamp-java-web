@@ -5,7 +5,7 @@
 <title>ex06</title>
 </head>
 <body>
-<h1>이벤트 - 이벤트가 발생된 태그 알아내기 II</h1>
+<h1>이벤트 - 이벤트가 발생된 태그 알아내기 III</h1>
 <button id="btn1" class="b1" data-no="100">버튼1</button><br>
 <button id="btn2" class="b1" data-no="200">버튼2</button><br>
 <button id="btn3" class="b2" data-no="300">버튼3</button><br>
@@ -23,13 +23,12 @@ var el2 = document.querySelectorAll(".b2");
 var btnClick = (e) => {
 	alert("===> " + e.target.getAttribute("data-no"));
 	for (var e of el2) {
-		//e.style["background-color"] = "blue";
-		e.style.backgroundColor = "blue";
+		e.style["background-color"] = "yellow";
 	}
 };
 
 for (var e of el) {
-	e.addEventListener("click", btnClick);	
+	  e.addEventListener("click", btnClick);
 }
 
 </script>
